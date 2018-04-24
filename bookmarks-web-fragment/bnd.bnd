@@ -1,0 +1,5 @@
+Bundle-Name: bookmarks-web-fragment
+Bundle-SymbolicName: bookmarks.web.fragment
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.bookmarks.web;bundle-version="1.0.25"
+Web-ContextPath: /com.byteparity.common.component

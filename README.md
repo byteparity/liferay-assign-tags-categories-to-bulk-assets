@@ -1,0 +1,1 @@
+# liferay7-bulk-of-tags-categories

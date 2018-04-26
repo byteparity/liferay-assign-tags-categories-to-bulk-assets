@@ -1,5 +1,5 @@
 Bundle-Name: wiki-web-fragment
-Bundle-SymbolicName: wiki.web.fragment
+Bundle-SymbolicName: wiki.web.fragment-1.0.0
 Bundle-Version: 1.0.0
 Fragment-Host: com.liferay.wiki.web;bundle-version="2.1.35"
 Web-ContextPath: /com.byteparity.common.component

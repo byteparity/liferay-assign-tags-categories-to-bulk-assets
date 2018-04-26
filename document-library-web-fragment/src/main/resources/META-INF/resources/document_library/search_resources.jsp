@@ -48,10 +48,18 @@ String keywords = ParamUtil.getString(request, "keywords");
 boolean showRepositoryTabs = ParamUtil.getBoolean(request, "showRepositoryTabs");
 boolean showSearchInfo = ParamUtil.getBoolean(request, "showSearchInfo");
 
-PortletURL portletURL = liferayPortletResponse.createRenderURL();
+String navigation = ParamUtil.getString(request, "navigation", "home");
 
+String currentFolder = ParamUtil.getString(request, "curFolder");
+String deltaFolder = ParamUtil.getString(request, "deltaFolder");
+
+PortletURL portletURL = liferayPortletResponse.createRenderURL();
+portletURL.setParameter("navigation", navigation);
+portletURL.setParameter("curFolder", currentFolder);
+portletURL.setParameter("deltaFolder", deltaFolder);
+portletURL.setParameter("folderId", String.valueOf(folderId));
 portletURL.setParameter("mvcRenderCommandName", "/document_library/search");
-portletURL.setParameter("redirect", redirect);
+//portletURL.setParameter("redirect", redirect);
 portletURL.setParameter("searchFolderId", String.valueOf(searchFolderId));
 portletURL.setParameter("keywords", keywords);
 
@@ -60,7 +68,9 @@ EntriesChecker entriesChecker = new EntriesChecker(liferayPortletRequest, lifera
 entriesChecker.setCssClass("entry-selector");
 entriesChecker.setRememberCheckBoxStateURLRegex("^(?!.*" + liferayPortletResponse.getNamespace() + "redirect).*(folderId=" + String.valueOf(folderId) + ")");
 
-SearchContainer dlSearchContainer = new SearchContainer(liferayPortletRequest, portletURL, null, null);
+//SearchContainer dlSearchContainer = new SearchContainer(liferayPortletRequest, portletURL, null, null);
+SearchContainer dlSearchContainer = new SearchContainer(liferayPortletRequest, null, null, "curEntry", dlPortletInstanceSettings.getEntriesPerPage(), portletURL, null, null);
+
 %>
 
 <aui:input name="repositoryId" type="hidden" value="<%= repositoryId %>" />

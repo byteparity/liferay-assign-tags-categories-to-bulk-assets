@@ -204,5 +204,5 @@ String keywords = ParamUtil.getString(request, "keywords");
 </aui:script>
 
 <!-- Start : Include Java Script  -->
-	<script src="/o/com.byteparity.common.component/js/common.js"></script>	
+	<script src="/o/com.byteparity.common.component-1.0.0/js/common.js"></script>	
 <!-- End : Include Java Script  -->

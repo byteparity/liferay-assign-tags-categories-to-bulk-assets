@@ -2,4 +2,4 @@ Bundle-Name: document-library-web-fragment
 Bundle-SymbolicName: document.library.web.fragment-1.0.0
 Bundle-Version: 1.0.0
 Fragment-Host: com.liferay.document.library.web;bundle-version="1.4.13"
-Web-ContextPath: /com.byteparity.common.component
+Web-ContextPath: /com.byteparity.common.component-1.0.0

@@ -313,4 +313,4 @@ else {
 
 
 
-<script src="/o/com.byteparity.common.component/js/common.js"></script>  <!--   include commom.js here -->
+<script src="/o/com.byteparity.common.component-1.0.0/js/common.js"></script>  <!--   include commom.js here -->

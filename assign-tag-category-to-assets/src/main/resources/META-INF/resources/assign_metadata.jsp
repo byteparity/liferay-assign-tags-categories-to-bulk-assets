@@ -1,6 +1,4 @@
-
 <%@ include file="init.jsp"%>
-
 <%
 
 	String assetIds = ParamUtil.getString(request, "assetIds");
@@ -21,39 +19,38 @@
 	} else if(assetType.equals(MBThread.class.getName())) {
 		warning = "Action applied to Threads only.";
 	} else if(assetType.equals(DLFileEntry.class.getName())) {
-		warning = "Action applied to Documents only.";
+		warning = "Action applied to Documentss only.";
 	} 
 %>
 
-<portlet:resourceURL id="/assignEntries" var="assignTagsCategoryURL"/>
-
-<div class="modal-content yui3-widget-stdmod yui3-widget-content-expanded">
-	<div class="container">
-		<div id="msgDiv"></div>
-		<div id="successDiv"></div>
-		<liferay-ui:asset-categories-error />
-		<liferay-ui:asset-tags-error />
-		<aui:form name="metadataForm">
-			<c:if test="<%= !assetType.equals(MBThread.class.getName()) %>">
-				<div>
-					<liferay-ui:message key="categories" />
-				</div>
-				<div class="entry-categories">
-					<liferay-ui:asset-categories-selector>
-					</liferay-ui:asset-categories-selector>
-				</div>
-			</c:if>
+<portlet:resourceURL id="/assignEntries" var="assignTagsCategoryURL">
+</portlet:resourceURL>
+	
+<div class="container">
+	<div id="msgDiv"></div>
+	<div id="successDiv"></div>
+	<liferay-ui:asset-categories-error />
+	<liferay-ui:asset-tags-error />
+	<aui:form name="metadataForm">
+		<c:if test="<%= !assetType.equals(MBThread.class.getName()) %>">
 			<div>
-				<liferay-ui:message key="tags" />
+				<liferay-ui:message key="categories" />
 			</div>
-			<div class="entry-tags">
-				<liferay-ui:asset-tags-selector>
-				</liferay-ui:asset-tags-selector>
+			<div class="entry-categories">
+				<liferay-ui:asset-categories-selector>
+				</liferay-ui:asset-categories-selector>
 			</div>
-			<hr/>
-			<aui:button type="button" cssClass="btn btn-primary" name="button" value="submit" onClick="asssignCategoriesOrTags()"/>
-		</aui:form>
-	</div>
+		</c:if>
+		<div>
+			<liferay-ui:message key="tags" />
+		</div>
+		<div class="entry-tags">
+			<liferay-ui:asset-tags-selector>
+			</liferay-ui:asset-tags-selector>
+		</div>
+		<hr/>
+		<aui:button type="button" cssClass="btn btn-primary" name="button" value="submit" onClick="asssignCategoriesOrTags()"/>
+	</aui:form>
 </div>
 	
 <script>
@@ -83,7 +80,6 @@
 		}
 	}
 	
-
 	// Assign Tag and Category resource call
 	function setAssetsData(categoryIds, tagNames, assets, assetType, nodeId) {
 		$.ajax({
@@ -108,5 +104,6 @@
 		});
 	}
 </script>
+
 
 

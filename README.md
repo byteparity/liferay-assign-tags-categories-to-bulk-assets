@@ -1,10 +1,8 @@
 # Liferay7 Bulk of Tags Or Categories
 
-Currently When Liferay Administrator want to add tags or categories to any Asset, admin has to do it by editing that particular Asset. For example if Admin want to assign "liferay-dxp" tag to the web content having text "liferay" in it. In such case admin has to first search web contents having text "liferay" and then assign "liferay-dxp" tag to each web content by editing each one manually. With the help of this component admin can assign tags (categories) to multiple web contents.  
+If Liferay Administrator want to add tags or categories to any Asset, then admin has to do it by editing that individual Asset. For example if Admin want to assign "liferay-dxp" tag to the web content having text "liferay" in it. In such case admin has to first search web contents having text "liferay" and then assign "liferay-dxp" tag to each web content by editing each one manually. With the help of this component admin can assign tags (categories) to multiple web contents without opening individual web content.  
 
- Component has below capabilities.
-*	Assign Tags or Categories to multiple  Web Content, Document, Bookmark, Wiki Pages, Message Boards, Blogs.
-
+This component will add given feature to Web Content, Document, Bookmark, Wiki Pages, Message Boards and Blogs.
 
 ## Environment
 

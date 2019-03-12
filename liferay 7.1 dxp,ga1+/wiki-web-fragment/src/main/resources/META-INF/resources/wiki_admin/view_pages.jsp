@@ -22,7 +22,7 @@
 <fmt:formatDate var="temp" pattern="s" type = "time"  value = "${now}" />
 
 <!-- common.js -->
-<script src="/o/com.byteparity.common.component-1.0.0/js/common.js?${temp}"></script> 
+<script src="/o/com.byteparity.common.component-1.1.0/js/common.js?${temp}"></script> 
 
 <%
 WikiNode node = (WikiNode)request.getAttribute(WikiWebKeys.WIKI_NODE);

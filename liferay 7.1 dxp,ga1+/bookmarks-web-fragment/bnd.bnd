@@ -1,4 +1,4 @@
 Bundle-Name: bookmarks-web-fragment
-Bundle-SymbolicName: bookmarks.web.fragment-1.0.0
-Bundle-Version: 1.0.0
+Bundle-SymbolicName: bookmarks.web.fragment-1.1.0
+Bundle-Version: 1.1.0
 Fragment-Host: com.liferay.bookmarks.web;bundle-version="1.0.25"

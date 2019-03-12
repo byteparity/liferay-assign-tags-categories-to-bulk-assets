@@ -1,0 +1,5 @@
+Bundle-Name: assign-tag-category-to-assets
+Bundle-SymbolicName: com.byteparity.common.component-1.0.0
+Bundle-Version: 1.0.0
+Export-Package: com.byteparity.common.component.constants
+Include-Resource: @com.liferay.bookmarks.api-3.0.11.jar

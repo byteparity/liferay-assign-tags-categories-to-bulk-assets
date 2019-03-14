@@ -6,7 +6,7 @@ This component will add given feature to Web Content, Document, Bookmark, Wiki P
 
 ## Environment
 
-* Liferay 7 - GA5 +,Liferay 7.1 - GA1 +, Liferay DXP
+* Liferay 7.0 + DXP, Liferay 7.0 CE-GA5 +, Liferay 7.1 CE-GA1 +
 * MySQL 5.6 +
 
 ## How to use
